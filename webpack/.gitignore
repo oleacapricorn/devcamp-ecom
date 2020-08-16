@@ -1,0 +1,8 @@
+#nodejs
+node_modules/
+npm-debug.log
+yaen-error.log
+
+#projects
+dist/
+env.js
