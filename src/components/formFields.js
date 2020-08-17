@@ -17,7 +17,6 @@ export class FormButton extends Component {
       const { className, title, type, onClick, input } = this.props;
       return (
           <div className={`${className} form-input`}>
-              <label className='form-input__label'>{title}</label>
               <button className={`form-button__button`}
                         type={type}
                         {...input}
