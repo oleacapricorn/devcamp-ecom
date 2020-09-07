@@ -60,7 +60,6 @@ class SignUpForm extends Component {
           type='submit'
           title='Login'
           name='login'
-          short='true'
           component={FormButton} />
         <Field className='sign-up-form__back'
           onClick={() => console.log('tryna go back')}
