@@ -47,7 +47,7 @@ class SignUpForm extends Component {
           placeholder='Password'
           name='password'
           component={FormInput} />
-        <Field className='sign-up-form__confirm-password'
+        <Field className='sign-up-form__confirm'
           type='password'
           title='Confirm Password'
           placeholder='Confirm Password'
