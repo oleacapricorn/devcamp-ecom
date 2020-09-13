@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
@@ -20,14 +21,14 @@ class Purchases extends Component {
                             <a onClick={() => this.props.setPurchaseDetail(purchase._id)} key={purchase._id} className='purchases__purchase purchase'>
                                 <img className='purchase__img' src='http://via.placeholder.com/80x80'/>
                             </a>
-                        )           
-                     })
+                        )
+                    })
                 }
-
             </div>
         )
     }
 }
+
 function mapStateToProps(state) {
     const { purchases } = state.user;
     return { purchases };
