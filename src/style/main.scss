@@ -15,14 +15,22 @@ body {
     box-sizing: inherit;
 }
 
-@import 'layout';
-@import 'headernavbar';
+
+// AUTH 
 @import 'auth/signin';
 @import 'auth/signup';
+
+@import 'layout';
+@import 'headernavbar';
 @import 'page-title';
 @import 'form-fields';
 @import 'details';
 
+// ACCOUNT
 @import 'account/account';
 @import 'account/purchase-history';
 @import 'account/account-information'; 
+
+
+// SHOP
+@import 'shop/shop'; 
