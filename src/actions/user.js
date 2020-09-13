@@ -3,6 +3,7 @@ import {
 } from './types';
 
 export function setPurchaseDetail(_id) {
+    console.log(_id);
     return ({
         type: SET_PURCHASE_DETAIL,
         payload: _id
@@ -26,7 +27,7 @@ export function fetchUserPurchases() {
               }
           },
           {
-
+            _id: 1,
               total: 1.30,
               orderNumber: '24343sdfkjh72',
               orderDate: new Date().toDateString(),
