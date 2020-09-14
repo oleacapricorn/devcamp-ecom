@@ -4,10 +4,13 @@ import {
   CHANGE_NAVBAR_ACTIVE
 } from './types';
 
-export function setHeaderLinks(links) {
+export function setHeaderLinks(links, onClick) {
   return ({
       type: SET_HEADER_LINKS,
-      payload: links
+      payload: {
+        links,
+        onClick: onClick ? onClick : ''
+    }
   })
 }
 
