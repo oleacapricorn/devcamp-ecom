@@ -16,24 +16,11 @@ class Shop extends Component {
         this.props.setHeaderLinks(headerLinks);
         this.props.fetchShopCategories();
         // filter products with links
-
         this.props.fetchShopProducts();
-
-    }
-
-
-    shouldComponentUpdate(nextProps) {
-        if (this.props != nextProps) {
-            this.props.setNavbarLinks(nextProps.categories, (_id) => this.props.filterProductsWithCategoryId(_id));
-        }
-        return true
-
     }
     render() {
         return (
             <div className='shop'>
-                <h1>shop</h1>
-
                 {/* shop search bar */}
                 {/* shop product */}
                 {/* shop cart button */}
@@ -43,12 +30,9 @@ class Shop extends Component {
 }
 
 function mapStateToProps(state) {
-    const { categories } = state.shop;
-    return {
-        categories
-    } 
+    return { state } 
 }
 
 Shop = connect(mapStateToProps, actions)(Shop);
 
-export default Shop; 
+export default Shop;
